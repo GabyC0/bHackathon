@@ -1,40 +1,23 @@
+import React from 'react';
 import './App.css';
-import Login from './components/login';
-import Students from './components/students';
-import Weather from './components/weather';
-import { useState, useEffect } from "react";
+import Navbar from './components/Navbar/Navigationbar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Pages/Home';
+import Review from './Pages/Review';
+//import Events from './pages/events';
+
 
 function App() {
-
-  const [user, setUser] = useState(undefined);
-
-    const loadUser = () =>{
-        fetch("/api/me")
-        .then((response) =>{
-            if(response.status === 200){
-                return response.json()
-            } else{
-                return undefined;
-            }
-        })
-        .then(user =>{
-            setUser(user);
-        })
-    };
-
-    useEffect(() =>{
-        loadUser();
-    }, []);
-
-  return (
-    <div className="App">
-      Hello from Techtonica!
-      <Login user={user} />
-      <Students />
-      {user ? <Weather /> : (<h3>Please loggin to use our services</h3>) }
-      
-    </div>
-  );
+return (
+	<Router>
+	<Navbar />
+	<Routes>
+		<Route path='/' exact element={<Home />} />
+		<Route path='/review' element={<Review />} />
+	</Routes>
+	</Router>
+);
 }
 
 export default App;
+

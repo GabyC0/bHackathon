@@ -9,19 +9,19 @@ const REACT_BUILD_DIR = path.join(__dirname, '..', 'client', 'build');
 const app = express();
 
 
-const config = {
-    authRequired: false,
-    auth0Logout: true,
-    secret: process.env.SECRET,
-    baseURL: process.env.BASEURL,
-    clientID: process.env.CLIENTID,
-    issuerBaseURL: process.env.ISSUERBASEURL
-  };
+// const config = {
+//     authRequired: false,
+//     auth0Logout: true,
+//     secret: process.env.SECRET,
+//     baseURL: process.env.BASEURL,
+//     clientID: process.env.CLIENTID,
+//     issuerBaseURL: process.env.ISSUERBASEURL
+//   };
 
 const PORT = process.env.PORT || 3001;
 app.use(cors());
 app.use(express.json());
-app.use(auth(config));
+//app.use(auth(config));
 
 //creates an endpoint for the route /api
 app.get('/', (req, res) => {
