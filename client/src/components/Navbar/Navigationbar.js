@@ -6,7 +6,8 @@ NavMenu,
 NavBtn,
 NavBtnLink,
 } from './NavbarElements';
-import Login from "../login";
+//import Login from "../login";
+import pregnancy from "./pregnancy.jpeg";
 
 const Navbar = () => {
 return (
@@ -15,16 +16,20 @@ return (
 		<Bars />
 
 		<NavMenu>
-		<NavLink to='/home' activeStyle>
+		{/* <NavLink to="/"> <div> <img className="pregnancy" src={pregnancy} alt="" style={{}}/> </div> </NavLink>	 */}
+		<NavLink to="/" activeStyle>
 			Home
 		</NavLink>
 		<NavLink to='/review' activeStyle>
 			Review
 		</NavLink>
+		<NavLink to='/search' activeStyle>
+			Search
+		</NavLink>
 		</NavMenu>
-		<NavBtn>
+		{/* <NavBtn>
 			<Login />
-		</NavBtn>
+		</NavBtn> */}
 	</Nav>
 	</>
 );

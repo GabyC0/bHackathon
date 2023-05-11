@@ -1,19 +1,33 @@
-
-
-const Login = ({user}) =>{
-
+//import { useState } from "react";
+const Login = () =>{
+   
     
     return (
-        <nav>
-        <ul>
-            {!user ? (<li><a href="http://localhost:3001/login">LOGIN</a></li>)
-            : (<li> Hello, {user.nickname}<a href="http://localhost:3001/logout">LOGOUT</a></li>)
-            }
-        </ul>
-      </nav>
-
+        <div>
+          <form>
+            <fieldset>
+            <label>Username</label>
+            <input
+              type="text"
+              id="add-nick-name"
+              placeholder="Nickname"
+              required
+              value={user.nickname}
+              onChange={handleNicknameChange}
+            />
+            <label>Email</label>
+            <input
+              type="text"
+              id="add-email"
+              placeholder="Email"
+              required
+              value={user.email}
+              onChange={handleEmailChange}
+            />
+            </fieldset>
+          </form>  
+        </div>
     )
-
-}
+};
 
 export default Login;

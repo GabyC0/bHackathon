@@ -42,3 +42,44 @@ ul{
 }
 
 
+body {
+  background-color: #C4AFB4;
+}
+
+/* .home-img {
+
+} */
+
+
+/* .image-div {
+  height: 50%;
+} */
+
+/* .home-img {
+  background:url('pregnancy.png') no-repeat center center fixed;
+  width: 100%;
+  min-height: 450px;
+
+} */
+
+.to-green {
+  background-color: #2a6059;
+
+}
+
+.home-top, .home-bottom {
+  color: white;
+  background-color: #2a6059;
+  text-align: center;
+  padding: 5%;
+}
+
+.home-bottom {
+  padding-bottom: 20%;
+}
+
+.home-bottom {
+  /* background-color: #2a6059; */
+  color: white;
+}
+
