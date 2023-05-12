@@ -18,7 +18,5 @@ For too many, it's the difference between life or death.
   <img src="https://github.com/GabyC0/bHackathon/assets/74997368/2ae764db-0db6-4dce-8ee6-6b09a9ec7770" width="500" alt="prototype-maps" />
   <img src="https://github.com/GabyC0/bHackathon/assets/74997368/e998c61b-33c8-471e-9087-6a153386e618" width="500" alt="prototype-reviews" />
   <img src="https://github.com/GabyC0/bHackathon/assets/74997368/0f4236d1-6d37-49dc-b9ae-3c97619e8e0f" width="500" alt="prototype-account" />
- </div>
- <div align="center">
   <img src="https://github.com/GabyC0/bHackathon/assets/74997368/9c34a7d5-a2dd-4693-b02c-55ce3a4624dc" width="500" alt="prototype-stats" />
 </div>
